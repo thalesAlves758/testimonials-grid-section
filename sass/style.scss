@@ -24,13 +24,51 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+
+article {
+  border-radius: .7rem;
+  background-color: $color-white;
+  padding: 2.1rem;
+  color: $color-background-secondary-article;
+
+  header {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  img {
+    border-radius: 100%;
+    margin-right: 1.2rem;
+    height: 3.3rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5rem;
+    margin-top: 1.8rem;
+
+    h2 {
+      font-weight: 700;
+      line-height: 2.4rem;
+      font-size: 1.7rem;
+    }
+
+    p {
+      opacity: 70%;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .articles {
-  gap: 1.6rem;
+  gap: 1.7rem;
+  max-width: 98rem;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "mainArticle mainArticle secondaryArticle asideArticle"
     "normalArticle tertiaryArticle tertiaryArticle asideArticle";
@@ -56,14 +94,26 @@ main {
   grid-area: asideArticle;
 }
 
+.author-identification {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  font-weight: 700;
+
+  .author-role {
+    opacity: 50%;
+  }
+}
+
 .attribution {
   font-size: 1rem;
   text-align: center;
   padding: .6rem;
+  color: $color-background-secondary-article;
+  font-weight: 700;
 
   a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
-    font-weight: 700;
   }
 }
