@@ -1,1 +1,25 @@
 @import "./reset.scss";
+
+:root {
+  font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
