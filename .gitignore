@@ -15,7 +15,10 @@
 .DS_Store
 
 .prettierignore
+
 .vscode
 design
+node_modules
+
 README-*
 style-guide.md
