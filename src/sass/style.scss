@@ -85,6 +85,8 @@ article {
 
 .secondary-article {
   grid-area: secondaryArticle;
+  background-color: $color-background-secondary-article;
+  color: $color-white;
 }
 
 .tertiary-article {
