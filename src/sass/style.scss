@@ -145,3 +145,21 @@ article {
     flex-direction: column;
   }
 }
+
+@media (max-width: 375px) {
+  article {
+    section {
+      line-height: 1.3rem;
+      gap: 1.4rem;
+
+      h2 {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
