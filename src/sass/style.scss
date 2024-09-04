@@ -20,6 +20,7 @@ body {
 }
 
 main {
+  padding: 3rem 3rem 1rem 3rem;
   flex: 1 0 200px;
   display: flex;
   justify-content: center;
@@ -124,5 +125,23 @@ article {
   a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "mainArticle mainArticle"
+      "secondaryArticle asideArticle"
+      "normalArticle asideArticle"
+      "tertiaryArticle tertiaryArticle";
+  }
+}
+
+@media (max-width: 563px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
   }
 }
