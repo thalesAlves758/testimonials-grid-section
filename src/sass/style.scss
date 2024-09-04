@@ -91,6 +91,8 @@ article {
 
 .tertiary-article {
   grid-area: tertiaryArticle;
+  background-color: $color-background-third-article;
+  color: $color-white;
 }
 
 .normal-article {
