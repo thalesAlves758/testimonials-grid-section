@@ -49,7 +49,7 @@ article {
     flex-direction: column;
     gap: 2rem;
     line-height: 1.5rem;
-    margin-top: 1.8rem;
+    margin-top: 1.4rem;
 
     h2 {
       font-weight: 700;
@@ -76,6 +76,11 @@ article {
 
 .main-article {
   grid-area: mainArticle;
+  background-color: $color-background-main-article;
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 right 6rem;
+  color: $color-white;
 }
 
 .secondary-article {
